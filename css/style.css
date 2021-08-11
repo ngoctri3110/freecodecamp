@@ -44,8 +44,17 @@ img {
 
 .btn:hover {
   background-color: #CC9900;
+  
 }
-
+.btn .show_more {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+.btn:hover .show_more {
+  transform: translateX(5px);
+  transition: all .3s ease-in;
+}
 /* HEADER */
 #header {
   height: 100vh;
